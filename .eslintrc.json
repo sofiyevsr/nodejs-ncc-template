@@ -1,0 +1,22 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "prettier", "jest"],
+  "rules": {
+    "no-await-in-loop": "off",
+    "no-unused-vars": "warn",
+    "no-shadow": "off",
+    "camelcase": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off"
+  }
+}

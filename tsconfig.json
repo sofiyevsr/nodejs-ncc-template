@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "moduleResolution": "node",
+    "strict": true,
+    "baseUrl": ".",
+    "noEmit": true,
+    "removeComments": true,
+    "paths": {
+      "@db": ["src/db"],
+      "@routes/*": ["src/routes/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@middlewares/*": ["src/middlewares/*"],
+      "@validators/*": ["src/lib/validators/*"],
+      "@responses": ["src/lib/responses"],
+      "@lib/*": ["src/lib/*"]
+    },
+    "typeRoots": ["node_modules/@types", "src/@types"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["index.ts", "src/**/*"],
+  "exclude": ["node_modules", "src/db/**/*", "**/*.spec.ts", "**/*.test.ts"]
+}
